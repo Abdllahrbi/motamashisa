@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brand-blue {
+  color: #01BEFE;
+}
+
+.brand-yellow {
+  color: #FFDD00;
+}
+
+.brand-orange {
+  color: #FF7D00;
+}
+
+.brand-pink {
+  color: #FF006D;
+}
+
+.brand-purple {
+  color: #8F00FF;
+}
+
+.bg-brand-blue {
+  background-color: #01BEFE;
+}
+
+.bg-brand-yellow {
+  background-color: #FFDD00;
+}
+
+.bg-brand-orange {
+  background-color: #FF7D00;
+}
+
+.bg-brand-pink {
+  background-color: #FF006D;
+}
+
+.bg-brand-purple {
+  background-color: #8F00FF;
+}

@@ -1,0 +1,51 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-white">
+    <ActionBar title="متماشي | Motamashi" class="bg-brand-purple">
+        <NavigationButton visibility="collapsed" />
+        <Label class="text-white text-xl font-bold" text="متماشي | Motamashi" />
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="p-6">
+            <Image src="~/assets/images/logo.png" class="h-32 w-32 mb-8 self-center" />
+            
+            <Label text="Welcome to Motamashi" class="text-2xl text-center brand-purple font-bold mb-4" />
+            <Label text="أهلاً بك في متماشي" class="text-xl text-center brand-purple mb-8" />
+
+            <StackLayout class="mb-4">
+                <TextField hint="Email / البريد الإلكتروني" 
+                          text="{{ email }}"
+                          keyboardType="email"
+                          class="p-4 border rounded-lg mb-2" />
+                
+                <TextField hint="Password / كلمة المرور"
+                          text="{{ password }}"
+                          secure="true"
+                          class="p-4 border rounded-lg" />
+            </StackLayout>
+
+            <Button text="Login / تسجيل الدخول" 
+                    tap="{{ onLoginTap }}"
+                    class="bg-brand-purple text-white font-bold p-4 rounded-lg mb-4" />
+
+            <StackLayout class="mb-4">
+                <Label text="Or sign in with / أو سجل الدخول باستخدام" class="text-center text-gray-500 mb-4" />
+                
+                <GridLayout columns="*, *" rows="auto" class="gap-4">
+                    <Button text="Google" 
+                            tap="{{ onGoogleTap }}"
+                            class="bg-white border border-gray-300 p-4 rounded-lg" 
+                            col="0" />
+                    <Button text="Apple" 
+                            tap="{{ onAppleTap }}"
+                            class="bg-black text-white p-4 rounded-lg" 
+                            col="1" />
+                </GridLayout>
+            </StackLayout>
+
+            <Label text="Don't have an account? / ليس لديك حساب؟" class="text-center text-gray-500" />
+            <Button text="Register / تسجيل جديد" 
+                    tap="{{ onRegisterTap }}"
+                    class="bg-transparent border border-brand-purple text-brand-purple font-bold p-4 rounded-lg" />
+        </StackLayout>
+    </ScrollView>
+</Page>
